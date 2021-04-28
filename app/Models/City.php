@@ -20,4 +20,10 @@ class City extends Model
     {
         return $this->belongsToMany(Company::class);
     }
+
+    public function coments()
+    {
+        return $this->morphMany(Coments::class,'comentable');
+    }
+
 }

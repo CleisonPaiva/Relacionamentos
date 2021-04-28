@@ -20,4 +20,9 @@ class State extends Model
     {
         return $this->hasMany(City::class);
     }
+
+    public function coments()
+    {
+        return $this->morphMany(Coments::class,'comentable');
+    }
 }
