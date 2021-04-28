@@ -24,3 +24,8 @@ Route::get('OneToManyInsert', 'App\Http\Controllers\OneToManyController@OneToMan
 //UM PARA MUITOS-Through
 //Nesse exemplo fazemos a ligação direta entre pais e cidades usando o estado como meio
 Route::get('OneToManyTrought', 'App\Http\Controllers\OneToManyController@OneToManyTrought');
+
+
+Route::get('ManyToMany', 'App\Http\Controllers\ManyToManyController@ManyToMany');
+Route::get('ManyToManyInverse', 'App\Http\Controllers\ManyToManyController@ManyToManyInverse');
+Route::get('ManyToManyInsert', 'App\Http\Controllers\ManyToManyController@ManyToManyInsert');
